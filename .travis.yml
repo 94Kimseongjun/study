@@ -4,8 +4,8 @@ branches:
   only:
     - master
 before_install:
-  - wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | sudo apt-key add -
-  - sudo apt update
+  #- wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | sudo apt-key add -
+  #- sudo apt update
   - chmod +x gradlew
 # Travis CI Server Home
 cache:
@@ -22,7 +22,7 @@ before_deploy:
 
 deploy:
   - provider: s3
-    access_key_id: $AWS_ACCES_KEY
+    access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
     bucket: sjkim-springboot-build
     region: ap-northeast-2
