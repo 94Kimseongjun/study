@@ -4,9 +4,8 @@ branches:
   only:
     - master
 before_install:
-  #- wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | sudo apt-key add -
-  #- sudo apt update
   - chmod +x gradlew
+
 # Travis CI Server Home
 cache:
   directories:
