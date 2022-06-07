@@ -6,7 +6,7 @@ echo "> Build file copy"
 cp $REPOSITORY/zip/*.jar $REPOSITORY
 
 echo "> 현재 구동 중인 application pid check"
-CURRENT_PID=$(pgrep -fl freelec-springboot2-webservice | grep jar | awk '{print $1}')
+CURRENT_PID=$(pgrep -fl study | grep java | awk '{print $1}')
 echo "현재 구동중인 어플리케이션 pid: $CURRENT_PID"
 
 if [ -z "$CURRENT_PID" ]; then
