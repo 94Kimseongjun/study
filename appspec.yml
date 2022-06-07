@@ -1,5 +1,5 @@
 version: 0.0
-os: linux
+os: linux #test
 files:
   - source:  /
     destination: /home/ec2-user/app/step2/zip/study.zip
